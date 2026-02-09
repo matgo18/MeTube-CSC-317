@@ -1,0 +1,11 @@
+<nav>
+    <a href="/index">Index</a>
+    {{#if user}}
+        <a href="/profile">Profile</a>
+        <a href="/logout">Logout</a>
+    {{else}}
+        <a href="/login">Login</a>
+    {{/if}}
+    <a href="/registration">Registration</a>
+    <a href="/postvideo">Post Video</a>
+</nav>

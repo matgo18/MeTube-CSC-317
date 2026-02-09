@@ -1,0 +1,13 @@
+<p>Post Author: {{video.author}}</p>
+<p>Post Creation Time: {{formatDate video.created_at "MMMM D, YYYY [at] h:mm A"}}</p>
+{{> videoplayer}}
+<p>Post Description: {{video.description}}</p>
+<p>Likes: <span id="like-count">{{video.likes}}</span></p>
+{{#if user}}
+    <input type="submit" id="like-button" value="✅ Like" data-video-id="{{video.id}}" />
+{{else}}
+    <p style="color: red">You must be logged in to comment and like videos</p>
+{{/if}}
+{{> comments}}
+
+

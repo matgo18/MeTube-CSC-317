@@ -1,0 +1,33 @@
+{{#if user}}
+    <form action="/postvideo" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="title">Post Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <div>
+            <label for="description">Post description:</label>
+            <input type="text" id="description" name="description">
+        </div>
+
+        <div>
+            <label for="video">Post Video:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+        </div>
+
+        <div>
+            <label for="thumbnail">Post Thumbnail</label>
+            <input type="file" id="thumbnail" name="thumbnail" accept="image/*">
+        </div>
+
+        <div>
+            <input type="checkbox" id="AUP_check" name="AUP_check" required>
+            <label for="AUP_check">I accept the Acceptable Use Policy for uploading videos</label>
+        </div>
+
+        <input type="submit" value="Post video">
+    </form>
+{{else}}
+    <p>You must log in first to post videos</p>
+    <input type="submit" value="Login" onclick="location.href='/login'">
+{{/if}}

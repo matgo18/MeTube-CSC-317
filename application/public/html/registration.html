@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script defer src="../js/registration.js"></script>
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="header">
+        <header>Registration Page</header>
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="postvideo.html">Post Video</a>
+            <a href="viewpost.html">View Post</a>
+        </nav>
+    </div>
+    <main>
+        <h1>Register your account</h1>
+        <form id="registration-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+            </div>
+
+            <div>
+                <input type="checkbox" id="age_check" name="age_check" required>
+                <label for="age_check">I am 13+ years of age</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="TOS_Privacy_rules" name="TOS_Privacy_rules" required>
+                <label for="TOS_Privacy_rules">
+                    I accept the <a href="http://google.com">TOS and Privacy rules</a>
+                </label>
+            </div>
+
+            <div id="error-messages" style="color:red; margin-top:10px;"></div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        Matyas Gault @ 2025
+    </footer>
+</body>
+</html>

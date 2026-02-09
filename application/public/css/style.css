@@ -1,0 +1,248 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #181825;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background: linear-gradient(to right, #ff66aa, #aa66ff);
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a {
+  color: #ff66aa;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #ff66aa;
+  color: white;
+}
+
+h1 {
+  color: #ff66aa;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+main {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1.5rem auto;
+  width: 85%;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(255, 102, 170, 0.3);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #ff66aa;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: #ff0000;
+}
+
+
+
+input[type="submit"] {
+  background: #ff66aa;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: #aa66ff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0.25rem auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #ff66aa;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 102, 170, 0.5);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #ff66aa;
+}
+
+input[type="checkbox"]:checked {
+  background: #ff66aa;
+  border-color: #ff66aa;
+  box-shadow: 0 0 10px rgba(255, 102, 170, 0.5);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+input[type="file"] {
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background: #ff66aa;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]:hover {
+  background: #aa66ff;
+  box-shadow: 0 0 10px rgba(170, 102, 255, 0.5);
+}
+
+input[type="file"]::file-selector-button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+#photo-gallery {
+  text-align: center;
+}
+
+.photo-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.photo-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.photo-title {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+
+

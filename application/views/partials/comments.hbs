@@ -1,0 +1,18 @@
+<section id="comment-section">
+    <h2>Comments :</h2>
+    {{#if user}}
+        <form action="/comment/{{video.id}}" method="POST">
+            <label for="comment-box"></label>
+            <textarea id="comment-box" name="comment" rows="3" placeholder="Leave a comment" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    {{/if}}
+
+
+    <ul>
+        {{#each comments}}
+            <li><strong>{{this.username}}:</strong> {{this.comment}} <em>({{formatDate this.created_at "MMMM D, YYYY [at] h:mm A"}})</em></li>
+        {{/each}}
+    </ul>
+</section>

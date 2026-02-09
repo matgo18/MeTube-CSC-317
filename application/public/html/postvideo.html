@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>Post Video Page</title>
+</head>
+<body>
+    <div class="header">
+        <header>Post Video Page</header>
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="postvideo.html">Post Video</a>
+            <a href="viewpost.html">View Post</a>
+        </nav>
+    </div>
+    <main>
+        <h1>Post your videos</h1>
+        <form>
+            <div>
+                <label for="title">Post Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div>
+                <label for="description">Post description:</label>
+                <input type="text" id="description" name="description">
+            </div>
+
+            <div>
+                <label for="video">Post Video:</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="AUP_check" name="AUP_check" required>
+                <label for="AUP_check">I accept the Acceptable Use Policy for uploading videos</label>
+            </div>
+
+            <input type="submit" value="Post video">
+        </form>
+    </main>
+    <footer>
+        Matyas Gault @ 2025
+    </footer>
+</body>
+</html>
