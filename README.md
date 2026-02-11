@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of this project is to create a video hosting web application, including multiple users, likes, comments, aswell as a home page containing a search bar, using HTML, CSS, React, NodeJS and Handlebars
+The purpose of this project is to create a video hosting web application, including multiple users, likes, comments, aswell as a home page containing a search bar, using HTML, CSS, NodeJS and Handlebars
 
 
 # Build/Run Instructions
